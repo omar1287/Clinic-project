@@ -64,6 +64,44 @@ a {
 /* Custom Scroll bar End */
 
 /* Custom Css */
+.image-container {
+  display: flex; /* Use flexbox to center the image */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100px; /* Set a height for the container */
+}
+
+.image-container img {
+  width: 105px; /* Set a smaller width */
+  height: 100px; /* Set a smaller height to maintain the circle */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the circle */
+}
+
+.text-container {
+  padding-top: 20px; /* Adjusted padding above the text */
+  text-align: center; /* Center the text */
+}
+.services-wrapper .card {
+  overflow: hidden; /* Ensure no overflow from the card */
+  border: none; /* Optional: remove border */
+}
+
+.image-container {
+  width: 100%; /* Make container full width */
+  height: 150px; /* Set a smaller fixed height */
+  overflow: hidden; /* Hide overflow */
+}
+
+.image-container img {
+  width: 100%; /* Make image full width */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s; /* Smooth zoom effect */
+}
+
+.image-container:hover img {
+  transform: scale(1.05); /* Slight zoom in on hover */
+}
 
 .wrapper {
   padding: 6.25rem 0;
